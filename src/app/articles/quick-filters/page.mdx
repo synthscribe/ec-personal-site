@@ -1,0 +1,221 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import marketResearch from './market-research.png'
+import content from './content.png'
+import solutions from './solutions.png'
+import voting from './solution-voting.png'
+import opportunityAreas from './opportunity-areas.png'
+import lowfi from './lowfi.png'
+import flowc from './flowc.png'
+import flowa from './flowa.png'
+import flowb from './flowb.png'
+import flow3 from './flow-3.png'
+import designSys from './design-sys.png'
+
+export const article = {
+  author: 'Edward Conte',
+  date: '2023-12-04',
+  title: 'Spotify Case Study: Quick Filters Feature',
+  description:
+    'A case study on the design process of a new feature for Spotify, focusing on enhancing music discoverability. ' +
+      'This case study delves into the end-to-end design process of developing a new feature for Spotify aimed at ' +
+      'enhancing music discoverability for users. The project explores the challenges and opportunities associated ' +
+      'with helping users uncover new music tailored to their tastes, using a blend of user-centered design principles, ' +
+      'data analysis, and iterative prototyping.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+In the realm of digital music streaming, Spotify has long stood as a bastion of variety and personalization,
+a place where every user’s taste finds a melody. Beneath this landscape's surface lay an uncharted challenge:
+the quest for a more intuitive and personalized music discovery experience.
+
+*“Our mission is to unlock the potential of human creativity by giving a million creative artists the opportunity
+to live off their art and billions of fans the opportunity to enjoy and be inspired by it.”*
+
+This is the Spotify mission statement. As concise and accurate as this mission statement is,
+a platform with the express goal of providing users with opportunity and inspiration fails to offer significant
+access to these opportunities within their app.
+
+## Identifying The Challenge: The Call to Adventure
+
+### The Initial Problem
+
+*When users listen to music, they want to discover songs and artists that adhere to their musical tastes so they
+can grow their music library.*
+
+In recent years, Spotify has been experimenting with different features to enhance song discoverability for their users.
+Despite these attempts, they seem to place their focus on the song and not the user, neglecting their user’s preferences.
+
+### User Research
+
+I first refined this problem by conducting interviews with Spotify users to identify their pain points
+within the app and determine if they possessed the same discoverability grievances as I did.
+**I wanted to identify common practices users employ to achieve their desired listening experience on Spotify.**
+
+1. Users utilize playlists to create song lists for specific events or situations.
+2. Users discover new songs primarily through the Spotify recommendation algorithm.
+3. Users had mixed opinions about the algorithm’s accuracy in assessing song cohesiveness.
+4. Users expressed a key desire to exercise some control over recommendations.
+5. Most users don’t venture past the Home page or Library page
+
+These were essential insights from users that provided me with a roadmap and allowed me to pinpoint where to focus my efforts.
+
+### The People Problem
+
+After synthesizing the user research findings, namely the trends and insights, I refined my problem:
+
+*When users are looking to play new songs, they want to quickly discover music without explicitly searching for it,
+so they can listen to new content that fits the criteria they are searching for, but they cannot do that because...*
+
+* Users are unable to apply their preferences to discoverability effectively
+* Searching for specifics is time-consuming and inconvenient
+
+## Brainstorming: The Quest for a Solution
+
+After user research, I had my map, but I still needed to figure out how to use the map and arrive at my destination.
+How would I identify the landmarks on the map in the real world?
+
+### Market Research
+
+To answer this question, I first conducted market research with the goal of identifying how similar
+platforms to Spotify attempt to solve the problem I had identified.
+
+<Image src={marketResearch} alt="" />
+
+I examined four popular platforms and competitors to Spotify:
+
+1. Youtube Music
+2. Pandora
+3. Apple Music
+4. SoundCloud
+
+Though they are all competitors to Spotify, these platforms accomplish similar goals in very different ways.
+**I identified that there’s limited ability for users to set explicit preferences or filters for their listening
+experience across all of these platforms.** This finding was precisely what I was searching for and facilitated
+my discovery of the main opportunity for improvement among these applications: **enhanced user preference input.**
+
+* Allowing users to set more detailed and explicit content preferences for better-tailored recommendations
+would significantly enhance the user experience on a listening platform.
+* After realizing the success of Spotify-generated playlists, perhaps leveraging the power of artificial intelligence
+to achieve a level of customization not seen before in personalized playlists would give users
+the freedom they desire in playlist creation
+
+## The Storm Begins
+
+I had the map, I had the landmarks, and all that was left was to figure out exactly where the treasure was buried.
+I collaborated with two team members to identify questions within “opportunity areas” where we could focus
+on specific answers for a solution.
+
+<Image src={opportunityAreas} alt="" />
+
+With the opportunity areas as guides, we brainstormed solutions that would satisfy the people problem
+in the areas most pertinent to the problem.
+
+<Image src={solutions} alt="" />
+
+We had many, many solutions. Our goal was to record as many ideas as possible and then group the solutions into solution spaces,
+where we voted on the solutions that best solved the people problem.
+
+<Image src={voting} alt="" />
+
+Through this brainstorming, we identified the specific area for the solution I was looking for:
+1. How might we better implement AI in music discovery?
+2. How might we incorporate user input into the Spotify algorithm?
+3. How might we create a more interactive discovery experience?
+
+### Low-Fidelity Mock-ups: Building the Skeleton
+
+<image src={lowfi} alt="" />
+
+Low-fidelity mock-ups were a vital pathway to fleshing out my ideas. They provided a visualization of how these features may work,
+which aided in determining which feature to move forward with.
+
+## Iteration: The Treasure
+
+With a more clear vision of the final solution, I began iterating on how it would be implemented into the existing Spotify app.
+
+### The Treasure
+
+I concluded that implementing a “quick filters” feature would best solve the people problem by permitting users to play
+recommendations filtered by user-defined preferences. Through this implementation, Spotify would provide users with a concise pathway to quickly play recommendations that fit their situation (event, mood, etc.) while reducing the time users spend searching through menus.
+
+### Content Requirements
+
+To properly render my ideated solution, I developed a content hierarchy tailored specifically for the feature I aimed to implement.
+
+<Image src={content} alt="" />
+
+This content hierarchy outlined the content required to successfully implement the feature and served as a guideline
+for developing medium-fidelity mock-ups.
+
+### Medium-Fidelity Mock-ups: Putting on Some Muscle
+
+The following are three medium-fidelity flow prototypes from my iterations that best meet the goals of the Quick Filters feature.
+These flows aim to implement the feature at different entry points seamlessly.
+
+<Image src={flowa} alt="" />
+
+My goal with Flow A was to integrate the quick filter feature into the homepage of the Spotify application.
+My intention was to maximize the visibility of the feature through its own widget without drawing too much attention away from other elements of the page.
+
+<Image src={flowb} alt="" />
+
+With Flow B, I experimented with an entry point on the Library page through the plus button.
+This button is used to create a new playlist or blend, so it seemed fitting to integrate a new playlist creation feature within this menu.
+
+<Image src={flowc} alt="" />
+
+Flow C brings the entirety of the quick filters feature to a widget, eliminating the need for a new menu.
+My reasoning was that implementing the new feature without a separate page would entice users.
+
+I experimented with different user flows and entry points at this stage, searching for a flow that balanced
+the content required for the feature with a concise and intuitive user experience. My goal was to create
+medium-fidelity explorations using the existing Spotify user interface and app design as a base, carefully
+balancing the new feature with Spotify’s present layout.
+
+## Design System: The Diet
+
+<Image src={designSys} alt="" />
+
+I developed a design system to ensure the Quick Filters feature’s integration into Spotify’s user interface.
+The system is a framework that encompasses a spectrum of components,
+from typography and color palettes to interactive elements and layouts. This design system was the blueprint for
+the feature’s design and enhanced the overall user experience with its intuitive and user-friendly design.
+
+## High-Fidelity Prototyping: The Conditioning
+
+Based on my medium-fidelity iterations and the design kit that I generated based on analysis of the Spotify app,
+I fleshed out the flows into high-fidelity explorations of the feature.
+
+<Image src={flow3} alt="" />
+
+Based on user feedback and analysis of the three final high-fidelity flow designs, I decided to move forward with Flow C.
+Although I was initially interested in confining the feature to a widget without introducing a new page to the app,
+there comes a point where filling the widget with too much information impacts the user’s experience negatively.
+Reducing the widget to an entry point displaying recently created playlists accessible without entering the new page
+tastefully separates content and improves usability. Reducing the number of menus that the user must access increases
+intuitiveness and elevates the feature's accessibility.
+
+## The Final Product
+
+[click here to view the final product](https://vimeo.com/891283623?share=copy)
+
+### My Takeaway
+
+**Product Insights:** A memorable lesson from this project was the indispensable role of user research and collaboration
+in narrowing down the scope of my idea and identifying solutions. Taking the time to assess the user properly provided
+me with new perspectives, ideas, or ways to approach a problem. Through comprehensive user research,
+I ensured that the final product resonated with the users’ needs.
+
+**Design Process:** A key learning experience from this project is the significance of iteration in the design process.
+At the beginning of the design process, it became evident to me that the key to uncovering the best idea lies in initially
+prioritizing the quantity of ideas and explorations. Once a promising idea emerges, the focus should shift to quality,
+meticulously refining the concept into a viable, user-centric design. I realized that the iterative process of
+exploration and refinement is the cornerstone of developing a successful solution.
+
+## Read the Full Case Study [Here](https://medium.com/@eac267/spotify-concept-quick-filters-3164d7bf9ee3)

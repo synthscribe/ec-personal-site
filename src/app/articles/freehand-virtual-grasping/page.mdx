@@ -1,0 +1,110 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import final_model from './final-model.png'
+import final_force from './force.png'
+import push from "./non-grasping.png";
+import log from "./log.png";
+
+export const article = {
+  author: 'Ethan Lin, Emma Li, Jiasheng Shi, Edward Conte, Cooper Proctor, Una Wu',
+  date: '2024-05-20',
+  title: 'Research Project: Freehand Virtual Grasping',
+  description:
+    'In current VR systems, achieving realistic and intuitive interactions between the user and virtual objects is a ' +
+      'significant challenge due to the disconnect between the virtual and real world. We seek to overcome this ' +
+      'challenge by creating a physics-based, free-hand grasping model in Unreal Engine to make grasping virtual ' +
+      'objects a more natural user experience in VR.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+## Physics Based Freehand Virtual Grasping
+
+Authors: Ethan Lin, Emma Li, Jiasheng Shi, Edward Conte, Cooper Proctor, Una Wu
+
+### Abstract
+
+In current VR systems, achieving realistic and intuitive interactions between the user
+and virtual objects is a significant challenge due to the disconnect between the virtual
+and real world. We seek to overcome this challenge by creating a physics-based,
+free-hand grasping model in Unreal Engine to make grasping virtual objects a more
+natural user experience in VR. Our model leverages Meta Quest Pro’s hand-tracking
+technology and Unreal Engine’s built-in physics to allow users to realistically interact
+with virtual objects using their bare hands without needing controllers, voice
+commands, or haptic gloves. We create our own force-calculation algorithm which
+calculates the normal force from each contact point in the hand to the virtual object.
+The normal forces are used to apply an impulse to the object and to find the static or
+kinetic friction between the hand and the virtual object. The static and kinetic friction
+relationship in our model mirrors real-world physics and gives the user a more free
+and natural experience of grabbing objects in VR.
+
+### Final Model
+<Image src={final_model} alt="" />
+
+Our model uses colliders to detect collisions at specific points on the hand. When a collision
+occurs, a force is applied to the object at the collision point where the magnitude is determined
+by the velocity of the collider and the depth of the collider into the object. A “grab” state occurs
+when perpendicular forces are applied to an object such that there is approximately zero net
+force. When in the grab state, the object's physics is disabled and the object attaches to the hand
+until the conditions for the grab state no longer hold.
+
+### Force Vectors
+<Image src={final_force} alt="" />
+
+each collider has an associated vector perpendicular to the joint in the hand. The front colliders have force vectors
+that are normal to the palm and the back colliders have vectors that are normal to the back of the
+hand.
+
+### Grasping Behavior
+
+<Image src={log} alt="" />
+
+Our grab condition varies based on different grab circumstances (one-hand, two-hand, pinch,
+etc.), the general criteria to determine if a grab is present on an object at any time are:
+
+1. The number of colliders in contact with the object on hand is at least two and at least one
+collider’s normal vector opposes at least one other’s.
+2. The depth of each collider into the object is satisfactory to apply a force large enough to
+overcome and cancel any external forces.
+
+### Non-Grasping Behavior
+
+<Image src={push} alt="" />
+
+When the grab conditions are not satisfied, our model accurately applies forces from the hand
+onto objects. Forces applied by contact points on the hand will push the object. The direction of
+the push is based on the force direction described above.
+
+### Conclusion
+
+Our physics-based, free-hand grasping model in Unreal Engine accurately and intuitively
+simulates users’ interactions with virtual objects. The implementation is centered around our
+force-calculation algorithm, which finds the magnitude of the normal force applied to virtual
+objects from each finger joint and phalanx bone in the hand. We attach a collider sphere to each
+of these joints and bones. By utilizing Meta Quest Pro’s hand-tracking system, we can locate the
+coordinate points of each collider sphere in Unreal’s world space. The collider spheres' world
+location helps determine where a hand collision is detected on a virtual object's surface.
+
+The collision points and depth values of each collider sphere inside the virtual object are then fed
+into our force-calculation algorithm, which calculates the normal force applied to the virtual
+object(s) from each collider sphere. If multiple normal forces oppose each other and balance out
+on different sides of a virtual object, then the gesture qualifies as a grip. The strength of this grip
+is determined by the depth detection on each collider in contact.
+
+If the depth of the grip passes a set threshold, the normal forces are used to calculate the static
+friction for each contact point. Static friction would then be applied, allowing the virtual object
+to stay firmly in the user's grasp as long as the user applies enough force.
+
+On the other hand, if the depth of the grab was detected to be too shallow, kinetic frictional force
+would be applied instead, causing the virtual object to slip out of the hand at a rate slower than
+gravity. Since our force-calculation algorithm is run once for every frame in Unreal, there is an
+easy transition between the kinetic state and static state, adding nuance and making the user
+experience more intuitive and natural, aligning with how humans interact with real objects.
+
+## Read the Full Paper [Here](https://drive.google.com/file/d/1wmcOMxhXL44oI2WiHNUpAR4P-he8v2B9/view?usp=sharing)
+
+
