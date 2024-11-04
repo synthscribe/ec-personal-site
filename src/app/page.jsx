@@ -273,9 +273,9 @@ export default async function Home() {
             Artist, Engineer, and Designer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I specialize in computer graphics and digital interaction design. My work spans across technical
+            Edward specializes in computer graphics and digital interaction design. His work spans across technical
             and creative fields, integrating AI, VR/AR development, and multimedia design to deliver innovative experiences.
-            I’m driven by a passion for storytelling through interdisciplinary work that bridges art and technology.
+            He is driven by a passion for storytelling exercised through interdisciplinary work that bridges art and technology.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

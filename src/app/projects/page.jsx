@@ -50,11 +50,11 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Explore my work"
-      intro="I am a digital media artist, designer, and engineer studying at Cornell University,
-      where I major in Digital Media with a concentration in Computer Graphics and Medieval Studies.
-      I create high-end digital renders and interactive designs using tools such as Blender,
+      intro="Edward is a digital media artist, designer, and engineer studying at Cornell University,
+      where he majors in Digital Media with a concentration in Computer Graphics.
+      Edward creates high-end digital renders and interactive designs using tools such as Blender,
       Unreal Engine 5, Python, and various design software.
-      My academic and project work reflect a deep commitment to innovation, problem-solving,
+      His academic and project work reflects a deep commitment to innovation, problem-solving,
       and blending technical skill with artistic expression."
     >
       <ul

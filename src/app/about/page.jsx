@@ -61,11 +61,11 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I am a digital media artist and engineer with a passion for
+              Edward is a digital media artist, designer, and engineer with a passion for
               crafting immersive digital experiences through the art and science
-              of computer graphics, interaction design, and product design. My
+              of computer graphics, interaction design, and product design. His
               work sits at the intersection of technology and storytelling,
-              where I explore how visuals and interactivity can transform
+              where he explores how visuals and interactivity can transform
               digital experiences into meaningful narratives.
             </p>
 
@@ -81,11 +81,11 @@ export default function About() {
               Vision
             </h2>
             <p>
-              I am driven by a desire to create visually rich, interactive
-              experiences that tell stories and enhance user engagement. My
+              Edward is driven by a desire to create visually rich, interactive
+              experiences that tell stories and enhance user engagement. His
               philosophy centers on the belief that computer graphics, product
               design, and interaction design are powerful tools for
-              storytelling. By bridging the digital and real worlds, I aim to
+              storytelling. By bridging the digital and real worlds, he aims to
               build experiences that are not only visually compelling but also
               deeply meaningful, inspiring users and pushing the boundaries of
               what’s possible in digital media.
@@ -95,11 +95,11 @@ export default function About() {
               Background
             </h2>
             <p>
-              My journey into digital media began with hands-on
+              Edward’s journey into digital media began with hands-on
               exploration—building computers, modding video games, and
-              experimenting with early graphics software sparked a fascination
+              experimenting with early graphics software which sparked a fascination
               that has only deepened over time. Studying and researching
-              computer graphics at Cornell University honed my skills in
+              computer graphics at Cornell University honed his skills in
               creating visually engaging, user-centered experiences, bridging
               art and technology in ways that push the boundaries of product and
               interaction design.
@@ -109,29 +109,29 @@ export default function About() {
               Expertise
             </h2>
             <p>
-              My expertise spans a range of skills, from advanced computer
+              Edward’s expertise spans a range of skills, from advanced computer
               graphics techniques to designing digital interactions and product
-              concepts that connect with users. I work extensively with tools
+              concepts that connect with users. He works extensively with tools
               like Unreal Engine, Blender, and scripting languages such as
               Python, building everything from hyper-realistic renders to
-              interactive prototypes. My approach combines technical precision
-              with visual storytelling, using my design acumen to create
+              interactive prototypes. Edward’s approach combines technical precision
+              with visual storytelling, using his design acumen to create
               products and experiences that captivate and engage, translating
-              complex ideas into visually cohesive narratives.”
+              complex ideas into visually cohesive narratives.
             </p>
 
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Current Projects
             </h2>
             <p>
-              Currently, I’m developing a digital mosaic project that merges the
+              Currently, Edward is developing a digital mosaic project that merges the
               precision of rendering with the organic flow of ancient mosaic
               art, exploring how computer graphics can evoke a tactile
-              experience. I’m also delving into AI-driven personalized health
+              experience. He is also delving into AI-driven personalized health
               dashboards and interactive, responsive product interfaces—projects
               that showcase the potential of interaction design and digital
               experiences to create compelling, user-centered narratives. These
-              projects reflect my commitment to innovating within visual
+              projects reflect a commitment to innovating within visual
               storytelling and building products that resonate on both aesthetic
               and functional levels.
             </p>
