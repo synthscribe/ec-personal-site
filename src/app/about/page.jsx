@@ -61,46 +61,103 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve always seen myself as a renaissance man, someone who blends technical expertise with creativity
-              in every project I take on. Central to all of the work I produce is storytelling.
-              I enjoy exploring the various mediums humans have used to communicate narratives throughout history,
-              which has led me to develop a diverse interdisciplinary skill set that spans art, design, and engineering.
+              I am a digital media artist and engineer with a passion for
+              crafting immersive digital experiences through the art and science
+              of computer graphics, interaction design, and product design. My
+              work sits at the intersection of technology and storytelling,
+              where I explore how visuals and interactivity can transform
+              digital experiences into meaningful narratives.
             </p>
+
+            {/*<ul Areas that I find compelling are>*/}
+            {/*  <li>Computer Graphics</li>*/}
+            {/*  <li>Interaction Design</li>*/}
+            {/*  <li>Product Design</li>*/}
+            {/*  <li>Digital Experiences</li>*/}
+            {/*  <li>Visual Storytelling</li>*/}
+            {/*</ul>*/}
+
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
+              Vision
+            </h2>
             <p>
-              My journey began at age 6, building intricate LEGO creations that sparked
-              my love for design and engineering. By the time I was in high school, I was building computers
-              not just for myself, but for my two brothers as well, diving into the world of hardware and software,
-              where I found endless possibilities for innovation.
+              I am driven by a desire to create visually rich, interactive
+              experiences that tell stories and enhance user engagement. My
+              philosophy centers on the belief that computer graphics, product
+              design, and interaction design are powerful tools for
+              storytelling. By bridging the digital and real worlds, I aim to
+              build experiences that are not only visually compelling but also
+              deeply meaningful, inspiring users and pushing the boundaries of
+              what’s possible in digital media.
             </p>
+
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
+              Background
+            </h2>
             <p>
-              In high school, I spent a lot of time playing video games with friends,
-              but I was never content with just playing—I wanted to understand how they worked.
-              This curiosity led me to hack and mod the games, reshaping them to my vision.
-              This was my first hands-on experience with computer graphics and coding,
-              and it opened up a world of digital creativity that I’ve been exploring ever since.
+              My journey into digital media began with hands-on
+              exploration—building computers, modding video games, and
+              experimenting with early graphics software sparked a fascination
+              that has only deepened over time. Studying and researching
+              computer graphics at Cornell University honed my skills in
+              creating visually engaging, user-centered experiences, bridging
+              art and technology in ways that push the boundaries of product and
+              interaction design.
             </p>
+
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
+              Expertise
+            </h2>
             <p>
-              More recently, my interests have shifted to artificial intelligence.
-              It’s not enough for me to simply experiment with AI models that others have created—
-              I push myself further by building my own models from scratch, blending technical mastery with
-              a relentless drive to innovate. Whether it’s creating digital renders, developing VR experiences,
-              or coding AI solutions, I strive to synthesize my diverse skill set into cohesive, groundbreaking projects.
+              My expertise spans a range of skills, from advanced computer
+              graphics techniques to designing digital interactions and product
+              concepts that connect with users. I work extensively with tools
+              like Unreal Engine, Blender, and scripting languages such as
+              Python, building everything from hyper-realistic renders to
+              interactive prototypes. My approach combines technical precision
+              with visual storytelling, using my design acumen to create
+              products and experiences that captivate and engage, translating
+              complex ideas into visually cohesive narratives.”
             </p>
+
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
+              Current Projects
+            </h2>
             <p>
-              Today, I continue to combine my technical skills with creativity,
-              pursuing projects that push boundaries and explore the future of digital interaction and media.
+              Currently, I’m developing a digital mosaic project that merges the
+              precision of rendering with the organic flow of ancient mosaic
+              art, exploring how computer graphics can evoke a tactile
+              experience. I’m also delving into AI-driven personalized health
+              dashboards and interactive, responsive product interfaces—projects
+              that showcase the potential of interaction design and digital
+              experiences to create compelling, user-centered narratives. These
+              projects reflect my commitment to innovating within visual
+              storytelling and building products that resonate on both aesthetic
+              and functional levels.
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="https://www.instagram.com/ed.conte/?hl=en" icon={InstagramIcon} className="mt-4">
+            <SocialLink
+              href="https://www.instagram.com/ed.conte/?hl=en"
+              icon={InstagramIcon}
+              className="mt-4"
+            >
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="https://github.com/ed-conte" icon={GitHubIcon} className="mt-4">
+            <SocialLink
+              href="https://github.com/ed-conte"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/edward-conte-446068255/" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/edward-conte-446068255/"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
@@ -111,9 +168,9 @@ export default function About() {
               ec@edwardconte.com
             </SocialLink>
             <SocialLink
-                href="mailto:eac267@cornell.edu"
-                icon={MailIcon}
-                className="mt-4"
+              href="mailto:eac267@cornell.edu"
+              icon={MailIcon}
+              className="mt-4"
             >
               eac267@cornell.edu
             </SocialLink>

@@ -35,6 +35,21 @@ export default function Uses() {
       intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
     >
       <div className="space-y-20">
+        <ToolsSection title="Programming Languages">
+            <Tool title="Web">
+                HTML, CSS, JavaScript, TypeScript, React, Node.js, Next.js
+            </Tool>
+            <Tool title="Backend">
+                Python, Java, C++, Swift
+            </Tool>
+            <Tool title="Concepts">
+                Object-Oriented Programming, Functional Programming, Data Structures, Algorithms, Design Patterns,
+                Testing, Debugging, Performance, Scalability, Git, App Design, Web Design, UX/UI Design,
+                Responsive Design, Accessibility, User Experience, User Interface, Interaction Design, Visual Design,
+                Typography, Color Theory, Grid Systems, Layout, Composition, Prototyping, Wireframing, Mockups, User Research,
+                VR/AR, 3D Modeling, Animation, Rendering, Shaders, Projection Mapping, Generative Art, Real-Time Graphics,
+            </Tool>
+        </ToolsSection>
         <ToolsSection title="Workstation">
           <Tool title="13” MacBook Air, M2 , 8GB RAM (2023)">
             I recently upgraded to the new MacBook Air with the M2 chip, and I must say, it is portable and fast.
@@ -50,9 +65,17 @@ export default function Uses() {
           <Tool title="Visual Studio Code">
             Ol reliable. If it ain’t broke, don’t fix it, just install plugins.
           </Tool>
+          <Tool title="WebStorm">
+            I use WebStorm for my React and Node.js projects. It’s a bit heavy, but great for web development.
+          </Tool>
           <Tool title="Blender">
             When it comes to 3D modeling, rendering, or animation, Blender is my go-to.
-            Messing with shaders and the scripting API has been a blast lately.
+            I have been experimenting with the Python API and the shader editor for most of my renders lately.
+          </Tool>
+          <Tool title="Unreal Engine">
+            My team and I used C++ scripting in Unreal Engine for our virtual grasping implementation.
+            This research in human-computer interaction was spearheaded by Professor Donald Greenberg,
+            and was an interesting dive into learning how to use Unreal Engine and C++.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Design">
@@ -64,6 +87,15 @@ export default function Uses() {
           <Tool title="Adobe Illustrator">
             I’ve been using Illustrator since I was a kid and it’s still the
             best tool for vector illustration.
+          </Tool>
+          <Tool title="Adobe Photoshop">
+            I use Photoshop for photo editing and digital painting.
+            It’s a great tool for creating textures and working with photos.
+          </Tool>
+          <Tool title="TouchDesigner">
+            TouchDesigner is a node-based visual programming language for real-time interactive multimedia content.
+            The projection mapping and generative art capabilities are endless, and it is python based which
+            made it accessible for me initially.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Productivity">
