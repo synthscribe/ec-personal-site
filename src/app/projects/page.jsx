@@ -10,7 +10,7 @@ const projects = [
   {
     name: 'Virtual Grasping',
     description:
-      'Advised by professor Donald Greenberg, my team and I designed and implemented novel free-hand virtual grasping techniques in VR which was brought to SIGGRAPH 2024.',
+      'Advised by professor Donald Greenberg, Edward and his team designed and implemented novel free-hand virtual grasping techniques in VR which was brought to SIGGRAPH 2024.',
     link: { href: '/articles/freehand-virtual-grasping', label: 'Read About Our Implementation' },
     logo: logoCornell,
   },
@@ -24,7 +24,7 @@ const projects = [
   {
     name: 'Quick Filters',
     description:
-      'A case study on Spotify user experience where my team and I designed a new feature for the app.',
+      'A case study on Spotify user experience where Edward and his team designed a new feature for the app.',
     link: { href: '/articles/quick-filters', label: 'Take a Look at the Case Study' },
     logo: logoSpotify,
   },
