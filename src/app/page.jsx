@@ -227,7 +227,7 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="https://drive.google.com/file/d/1X-BdWiKSlckW0dlrGqMBFBGDfGjbM-pe/view?usp=sharing" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://drive.google.com/file/d/1Ae9cTFfBX-UZt5Ag0atrJVUpEjNg8QR2/view?usp=sharing" variant="secondary" className="group mt-6 w-full">
         Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
