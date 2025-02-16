@@ -83,7 +83,7 @@ export default function Projects() {
           </Card>
         ))}
       </ul>
-      <PortfolioGallery />
+      <PortfolioGallery/>
     </SimpleLayout>
   )
 }

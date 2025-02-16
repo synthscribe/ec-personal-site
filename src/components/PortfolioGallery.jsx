@@ -15,8 +15,9 @@ export default function PortfolioGallery() {
                         <Image
                             src={image.src}
                             alt={image.alt}
-                            width={500}
-                            height={300}
+                            sizes="(min-width: 640px) 18rem, 11rem"
+                            //width={500}
+                            //height={300}
                             className="object-cover w-full h-60 transition-transform duration-300 transform group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
