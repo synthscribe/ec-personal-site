@@ -5,6 +5,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import logoCornell from '@/images/logos/cornell-logo.svg'
 import logoSpotify from '@/images/logos/spotify-logo.svg'
 import logoCrt from '@/images/logos/crt-logo.svg'
+import PortfolioGallery from '@/components/PortfolioGallery'
 
 const projects = [
   {
@@ -82,6 +83,7 @@ export default function Projects() {
           </Card>
         ))}
       </ul>
+      <PortfolioGallery />
     </SimpleLayout>
   )
 }
