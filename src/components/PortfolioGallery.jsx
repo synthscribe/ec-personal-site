@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import cem from '@/images/photos/cem.jpg'
 import mon from '@/images/photos/mon.jpg'
+import od from '@/images/photos/od.JPEG'
 
 const galleryImages = [
-    { src: mon, alt: 'Forgotten Monestary (Blender)' },
-    { src: cem, alt: 'Sanctum in Shadow (Blender)' }
+    { src: mon, alt: 'Forgotten Monestary', link: 'https://synthscribe.artstation.com/projects/GvgQea'},
+    { src: cem, alt: 'Sanctum in Shadow', link: 'https://synthscribe.artstation.com/projects/eRmKJw'},
+    { src: od, alt: 'Odysseus Returns', link: 'https://synthscribe.artstation.com/projects/1NZEWZ'},
 ]
 
 export default function PortfolioGallery() {
@@ -17,14 +19,22 @@ export default function PortfolioGallery() {
                         <Image
                             src={image.src}
                             alt={image.alt}
-                            sizes="(min-width: 800px)"
+                            //sizes="(min-width: 800px)"
                             aspectRatio={16 / 9}
                             //width={500}
                             //height={300}
-                            className="object-cover w-full h-60 transition-transform duration-300 transform group-hover:scale-110"
+                            //className="object-cover w-full h-60 transition-transform duration-300 transform group-hover:scale-110"
+                            className="object-cover w-full h-auto transition-transform duration-300 transform group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p className="text-white text-lg font-semibold">{image.alt}</p>
+                            <a
+                                href={image.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-lg font-bold hover:text-blue-300 transition-colors duration-300"
+                            >
+                                {image.alt}
+                            </a>
                         </div>
                     </div>
                 ))}
