@@ -1,14 +1,14 @@
 import Image from 'next/image'
 
 const galleryImages = [
-    { src: 'src/images/photos/mon.jpg', alt: 'Project 1' },
-    { src: 'src/images/photos/cem.jpg', alt: 'Project 2' }
+    { src: '@/images/photos/mon.jpg', alt: 'Forgotten Monestary (Blender)' },
+    { src: '@/images/photos/cem.jpg', alt: 'Sanctum in Shadow (Blender)' }
 ]
 
 export default function PortfolioGallery() {
     return (
         <div className="mt-16">
-            <h2 className="text-3xl font-bold text-white text-center mb-8">Portfolio Gallery</h2>
+            <h2 className="text-3xl font-bold text-white text-center mb-8">Portfolio</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {galleryImages.map((image, index) => (
                     <div key={index} className="relative group overflow-hidden rounded-lg shadow-lg">
