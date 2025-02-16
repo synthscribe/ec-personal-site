@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import cem from '@/images/photos/cem.jpg'
+import mon from '@/images/photos/mon.jpg'
 
 const galleryImages = [
-    { src: '@/images/photos/mon.jpg', alt: 'Forgotten Monestary (Blender)' },
-    { src: '@/images/photos/cem.jpg', alt: 'Sanctum in Shadow (Blender)' }
+    { src: mon, alt: 'Forgotten Monestary (Blender)' },
+    { src: cem, alt: 'Sanctum in Shadow (Blender)' }
 ]
 
 export default function PortfolioGallery() {
