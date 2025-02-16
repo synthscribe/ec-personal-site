@@ -17,7 +17,8 @@ export default function PortfolioGallery() {
                         <Image
                             src={image.src}
                             alt={image.alt}
-                            sizes="(min-width: 640px) 18rem, 11rem"
+                            sizes="(min-width: 800px)"
+                            aspectRatio={16 / 9}
                             //width={500}
                             //height={300}
                             className="object-cover w-full h-60 transition-transform duration-300 transform group-hover:scale-110"
