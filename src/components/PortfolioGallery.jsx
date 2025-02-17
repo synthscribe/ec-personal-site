@@ -2,11 +2,17 @@ import Image from 'next/image'
 import cem from '@/images/photos/cem.jpg'
 import mon from '@/images/photos/mon.jpg'
 import od from '@/images/photos/od.jpg'
+import sta from '@/images/photos/sta.jpg'
+import crt from '@/images/photos/crt.png'
+import lok from '@/images/photos/lok.jpg'
 
 const galleryImages = [
     { src: mon, alt: 'Forgotten Monestary', link: 'https://synthscribe.artstation.com/projects/GvgQea'},
     { src: cem, alt: 'Sanctum in Shadow', link: 'https://synthscribe.artstation.com/projects/eRmKJw'},
     { src: od, alt: 'Odysseus Returns', link: 'https://synthscribe.artstation.com/projects/1NZEWZ'},
+    { src: sta, alt: 'The Starman', link: 'https://synthscribe.artstation.com/projects/AZX2em'},
+    { src: crt, alt: 'CRT Dreams', link: 'https://synthscribe.artstation.com/projects/vbyYV3'},
+    { src: lok, alt: 'Look Up', link: 'https://synthscribe.artstation.com/projects/L4xr65'},
 ]
 
 export default function PortfolioGallery() {
@@ -24,7 +30,7 @@ export default function PortfolioGallery() {
                             //width={500}
                             //height={300}
                             //className="object-cover w-full h-60 transition-transform duration-300 transform group-hover:scale-110"
-                            className="object-cover w-full h-auto transition-transform duration-300 transform group-hover:scale-110"
+                            className="object-cover w-auto h-full transition-transform duration-300 transform group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <a

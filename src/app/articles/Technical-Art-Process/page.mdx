@@ -1,0 +1,36 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import final from '@/images/photos/od.jpg'
+
+export const article = {
+  author: 'Edward Conte',
+  date: '2025-01-02',
+  title: 'Odysseus Returns: A Technical Art Process',
+  description:
+    'This article details the creative and technical workflow behind the digital adaptation of a pivotal scene from The Odyssey, '+
+        'where Odysseus returns to Ithaca. The project explores the transformation of a literary moment into a visually '+
+        'immersive 3D render, utilizing modern computer graphics tools and techniques.'
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+The process begins with conceptualization, highlighting artistic decisions such as shifting the scene’s time of day to
+sunrise, symbolizing a new beginning. Drawing inspiration from the Ionian Islands, research and reference gathering
+informed the landscape’s aesthetics. The terrain was carefully curated in Gaea, then textured using a
+combination of displacement mapping and high-resolution assets in Blender.
+## Key technical implementations include:
+* **Sky and Atmosphere:** HDRI lighting and shader blending techniques to create a realistic dawn setting
+* **Terrain Creation:** Procedural terrain generation, texture blending, and optimized masking for natural variation
+* **Water Simulation:** A complex shader network to achieve realistic reflections, depth, and wave movement
+* **Environmental Detailing:** Scatter systems for trees, grass, and rocks using Blender’s Geoscatter and Botaniq plugins
+* **Architectural Elements:** Kitbashing castle assets from real-world scans to create an authentic Ithacan townscape
+* **Historical Accuracy:** Integration of a detailed Trireme Galley ship model to reinforce the era’s maritime culture
+* **Lighting and Post-Processing:** Strategic light placement for depth and contrast, followed by compositing adjustments to enhance realism
+
+<Image src={final} alt="" />
+
+## Read The Full 28 Page Process Doc [Here](https://drive.google.com/file/d/1TdwFQlxFwaUsqB_hvGMTfsIdkxd8g7mz/view?usp=sharing)
