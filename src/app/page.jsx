@@ -9,7 +9,9 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
+  ArtStationIcon,
 } from '@/components/SocialIcons'
+//import ArtStationIcon from '@/images/logos/artstationlogo.svg'
 import logoCrt from '@/images/logos/crt-logo.svg'
 import logoCornell from '@/images/logos/cornell-logo.svg'
 import logoSpotify from '@/images/logos/spotify-logo.svg'
@@ -292,6 +294,11 @@ export default async function Home() {
               href="https://www.linkedin.com/in/edward-conte-446068255/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+            />
+            <SocialLink
+              href="https://www.artstation.com/synthscribe"
+              aria-label="Follow on Artstation"
+              icon={ArtStationIcon}
             />
           </div>
         </div>

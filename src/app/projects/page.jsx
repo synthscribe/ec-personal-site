@@ -19,7 +19,7 @@ const projects = [
     name: 'CRT Dreams',
     description:
       'Award winning computer graphics and animation project displayed at the Cornell University art gallery',
-    link: { href: 'https://edwardconte.myportfolio.com/', label: 'View My Renders Here' },
+    link: { href: 'https://synthscribe.artstation.com/projects/vbyYV3', label: 'View My Renders Here' },
     logo: logoCrt,
   },
   {

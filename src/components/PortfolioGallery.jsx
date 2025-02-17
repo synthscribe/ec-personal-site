@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import cem from '@/images/photos/cem.jpg'
 import mon from '@/images/photos/mon.jpg'
-import od from '@/images/photos/od.JPEG'
+import od from '@/images/photos/od.jpg'
 
 const galleryImages = [
     { src: mon, alt: 'Forgotten Monestary', link: 'https://synthscribe.artstation.com/projects/GvgQea'},
