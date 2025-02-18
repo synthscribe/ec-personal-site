@@ -7,6 +7,7 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
+  ArtStationIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/headshot2.jpg'
 
@@ -159,6 +160,13 @@ export default function About() {
               className="mt-4"
             >
               Follow on LinkedIn
+            </SocialLink>
+            <SocialLink
+                href="https://www.artstation.com/synthscribe"
+                icon={ArtStationIcon}
+                className="mt-4"
+            >
+              Follow on ArtStation
             </SocialLink>
             <SocialLink
               href="mailto:ec@edwardconte.com"

@@ -301,6 +301,7 @@ export default async function Home() {
               aria-label="Follow on Artstation"
               icon={ArtStationIcon}
             />
+
           </div>
         </div>
       </Container>
