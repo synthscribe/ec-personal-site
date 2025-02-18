@@ -37,7 +37,7 @@ export default function PortfolioGallery() {
                                 href={image.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-white text-lg font-bold hover:text-blue-300 transition-colors duration-300"
+                                className="text-white text-lg font-bold hover:text-teal-500 transition-colors duration-300"
                             >
                                 {image.alt}
                             </a>
