@@ -32,7 +32,7 @@ export default function Uses() {
   return (
     <SimpleLayout
       title="Skills I have and tools I use"
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      intro="Here is a list of the tools and skills I use to create my work."
     >
       <div className="space-y-20">
         <ToolsSection title="Programming Languages">
@@ -86,22 +86,32 @@ export default function Uses() {
           </Tool>
           <Tool title="Adobe Illustrator">
             I’ve been using Illustrator since I was a kid and it’s still the
-            best tool for vector illustration.
+            best tool for vector illustration and creating logos.
           </Tool>
           <Tool title="Adobe Photoshop">
-            I use Photoshop for photo editing and digital painting.
-            It’s a great tool for creating textures and working with photos.
+            I use Photoshop for photo editing and post processing my renders.
+            It’s the best tool for working with photos in my opinion.
           </Tool>
           <Tool title="TouchDesigner">
             TouchDesigner is a node-based visual programming language for real-time interactive multimedia content.
             The projection mapping and generative art capabilities are endless, and it is python based which
             made it accessible for me initially.
           </Tool>
+            <Tool title="Gaea">
+            Gaea is a terrain generation software that I use to create realistic landscapes and environments.
+            It’s great for creating heightmaps and textures for my 3D models.
+            I love the node-based workflow and the ability to create complex terrains with ease.
+            </Tool>
         </ToolsSection>
         <ToolsSection title="Productivity">
           <Tool title="Notion">
             I love structure and organization in my life.
             Notion helps me keep track of everything I need to get done, and stores it in one accessible place.
+          </Tool>
+          <Tool title="Obsidian">
+            I use Obsidian for my creative projects and writing.
+            The plugins and themes are perfect for customization and curtailing the experience to my needs.
+            I used to use Notion for everything, but I found that Obsidian is better for creative writing and project management.
           </Tool>
           <Tool title="Google Calender">
             I’m a visual person, I like to see when things need to get done and how much time I have to do them.

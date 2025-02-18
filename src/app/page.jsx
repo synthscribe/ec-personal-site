@@ -11,7 +11,6 @@ import {
   LinkedInIcon,
   ArtStationIcon,
 } from '@/components/SocialIcons'
-//import ArtStationIcon from '@/images/logos/artstationlogo.svg'
 import logoCrt from '@/images/logos/crt-logo.svg'
 import logoCornell from '@/images/logos/cornell-logo.svg'
 import logoSpotify from '@/images/logos/spotify-logo.svg'
@@ -273,10 +272,10 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Artist, Engineer, and Designer
+            Technical Artist, Engineer, and Designer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Edward specializes in computer graphics and digital interaction design. His work spans across technical
+            Edward specializes in technical art, computer graphics and digital interaction design. His work spans across technical
             and creative fields, integrating AI, VR/AR development, and multimedia design to deliver innovative experiences.
             He is driven by a passion for storytelling exercised through interdisciplinary work that bridges art and technology.
           </p>
