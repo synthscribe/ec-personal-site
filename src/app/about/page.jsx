@@ -39,7 +39,7 @@ function MailIcon(props) {
 export const metadata = {
   title: 'About',
   description:
-    'I’m Edward Conte, an Artist, Designer, and Engineer',
+    'I’m Edward Conte, a CG developer & creative technologist for virtual production',
 }
 
 export default function About() {
@@ -58,16 +58,14 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Edward Conte, an Artist, Designer, and Engineer
+            I’m Edward Conte, a CG developer & creative technologist for virtual production
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              Edward is a digital media artist, designer, and engineer with a passion for
-              crafting immersive digital experiences through the art and science
-              of computer graphics, interaction design, and product design. His
-              work sits at the intersection of technology and storytelling,
-              where he explores how visuals and interactivity can transform
-              digital experiences into meaningful narratives.
+              Edward Conte is a CG developer and creative technologist specializing in virtual production, creative direction,
+              and AI-assisted workflows with Unreal Engine, Blender, and DaVinci Resolve.
+              He aims to partner with production and VFX teams to prototype faster, integrate emerging technologies,
+              and deliver next-generation stories.
             </p>
 
             {/*<ul Areas that I find compelling are>*/}
