@@ -24,7 +24,7 @@ const galleryImages = [
 export default function PortfolioGallery() {
     return (
         <div className="mt-16">
-            <h2 className="text-3xl font-bold text-white text-center mb-8">Portfolio</h2>
+            {/*<h2 className="text-3xl font-bold text-white text-center mb-8">Portfolio</h2>*/}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
                 {galleryImages.map((image, index) => (
                     <div key={index} className="relative group overflow-hidden rounded-lg shadow-lg">
