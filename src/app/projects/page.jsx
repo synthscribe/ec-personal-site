@@ -59,6 +59,7 @@ export default function Projects() {
       reflects a deep commitment to innovation, problem-solving,
       and blending technical skill with artistic expression."
     >
+      <PortfolioGallery/>
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
@@ -84,7 +85,6 @@ export default function Projects() {
           </Card>
         ))}
       </ul>
-      <PortfolioGallery/>
     </SimpleLayout>
   )
 }
