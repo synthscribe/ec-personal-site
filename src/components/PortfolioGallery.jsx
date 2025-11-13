@@ -28,16 +28,24 @@ export default function PortfolioGallery() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
                 {galleryImages.map((image, index) => (
                     <div key={index} className="relative group overflow-hidden rounded-lg shadow-lg">
-                        <Image
-                            src={image.src}
-                            alt={image.alt}
-                            //sizes="(min-width: 800px)"
-                            aspectRatio={16 / 9}
-                            //width={500}
-                            //height={300}
-                            //className="object-cover w-full h-60 transition-transform duration-300 transform group-hover:scale-110"
-                            className="w-full max-w-xs mx-auto h-full object-cover rounded-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl transition-transform duration-300 hover:scale-105"
-                        />
+                        {/*<Image*/}
+                        {/*    src={image.src}*/}
+                        {/*    alt={image.alt}*/}
+                        {/*    //sizes="(min-width: 800px)"*/}
+                        {/*    aspectRatio={16 / 9}*/}
+                        {/*    //width={500}*/}
+                        {/*    //height={300}*/}
+                        {/*    //className="object-cover w-full h-60 transition-transform duration-300 transform group-hover:scale-110"*/}
+                        {/*    className="w-full max-w-xs mx-auto h-full object-cover rounded-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl transition-transform duration-300 hover:scale-105"*/}
+                        {/*/>*/}
+                        <div className="aspect-[16/9] w-full">
+                            <Image
+                                src={image.src}
+                                alt={image.alt}
+                                fill
+                                className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105 rounded-md"
+                            />
+                        </div>
                         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <a
                                 href={image.link}
