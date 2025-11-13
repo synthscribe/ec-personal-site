@@ -59,7 +59,7 @@ export default function Projects() {
       // reflects a deep commitment to innovation, problem-solving,
       // and blending technical skill with artistic expression."
     >
-      <div className="mb-20">
+      <div className="mb-16">
         <PortfolioGallery/>
       </div>
       <ul
