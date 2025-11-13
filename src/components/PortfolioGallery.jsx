@@ -10,9 +10,9 @@ import crt from '@/images/photos/crt.png'
 import lok from '@/images/photos/lok.jpg'
 
 const galleryImages = [
-    { src: stu, alt: 'Left In a Hurry', link: ''},
-    { src: str, alt: 'The Departure', link: ''},
-    { src: cas, alt: 'Castle Above The Carpathians', link: ''},
+    { src: stu, alt: 'Left In a Hurry', link: 'https://synthscribe.artstation.com/projects/a0PxaL'},
+    { src: str, alt: 'The Departure', link: 'https://synthscribe.artstation.com/projects/L46P8P'},
+    { src: cas, alt: 'Castle Above The Carpathians', link: 'https://synthscribe.artstation.com/projects/4NrKlk'},
     { src: mon, alt: 'Forgotten Monestary', link: 'https://synthscribe.artstation.com/projects/GvgQea'},
     { src: cem, alt: 'Sanctum in Shadow', link: 'https://synthscribe.artstation.com/projects/eRmKJw'},
     { src: od, alt: 'Odysseus Returns', link: 'https://synthscribe.artstation.com/projects/1NZEWZ'},
