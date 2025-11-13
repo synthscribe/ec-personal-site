@@ -51,15 +51,17 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Explore my work"
-      intro="Edward is a technical artist, designer, and engineer studying at Cornell University,
-      where he majors in Digital Media with a concentration in Computer Graphics.
-      Edward creates high-end digital renders and interactive designs using tools such as Blender,
-      Unreal Engine 5, Python, and various design software.
-      His academic and project work, grounded in an acute understanding of computer graphics programming,
-      reflects a deep commitment to innovation, problem-solving,
-      and blending technical skill with artistic expression."
+      // intro="Edward is a technical artist, designer, and engineer studying at Cornell University,
+      // where he majors in Digital Media with a concentration in Computer Graphics.
+      // Edward creates high-end digital renders and interactive designs using tools such as Blender,
+      // Unreal Engine 5, Python, and various design software.
+      // His academic and project work, grounded in an acute understanding of computer graphics programming,
+      // reflects a deep commitment to innovation, problem-solving,
+      // and blending technical skill with artistic expression."
     >
-      <PortfolioGallery/>
+      <div className="mb-20">
+        <PortfolioGallery/>
+      </div>
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
