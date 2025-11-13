@@ -1,12 +1,18 @@
 import Image from 'next/image'
-import cem from '@/images/photos/cem.jpg'
-import mon from '@/images/photos/mon.jpg'
+import stu from '@/images/photos/STU.jpg'
+import str from '@/images/photos/STR.jpg'
+import cas from '@/images/photos/CAS.jpg'
+import cem from '@/images/photos/CEM.jpg'
+import mon from '@/images/photos/MON.jpg'
 import od from '@/images/photos/od.jpg'
 import sta from '@/images/photos/sta.jpg'
 import crt from '@/images/photos/crt.png'
 import lok from '@/images/photos/lok.jpg'
 
 const galleryImages = [
+    { src: stu, alt: 'Left In a Hurry', link: ''},
+    { src: str, alt: 'The Departure', link: ''},
+    { src: cas, alt: 'Castle Above The Carpathians', link: ''},
     { src: mon, alt: 'Forgotten Monestary', link: 'https://synthscribe.artstation.com/projects/GvgQea'},
     { src: cem, alt: 'Sanctum in Shadow', link: 'https://synthscribe.artstation.com/projects/eRmKJw'},
     { src: od, alt: 'Odysseus Returns', link: 'https://synthscribe.artstation.com/projects/1NZEWZ'},
