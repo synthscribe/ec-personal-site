@@ -23,6 +23,13 @@ const projects = [
     logo: logoCrt,
   },
   {
+    name: 'In Search of The Scholomance',
+    description:
+        'Storytelling project featuring rendered and written components installed at the Cornell University art gallery',
+    link: { href: 'https://synthscribe.artstation.com/projects/vbyYV3', label: 'View My Renders Here' },
+    logo: logoCornell,
+  },
+  {
     name: 'Quick Filters',
     description:
       'A case study on Spotify user experience where Edward and his team designed a new feature for the app.',
